@@ -640,7 +640,7 @@
   }
 }
 /*Ipad ngang(1024 x 768)*/
-@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+@media only screen and (min-width: 1024px) and (max-width: 1259px) {
   .wrap {
     .header {
       .menu-mobile,
@@ -784,7 +784,7 @@
     }
   }
 }
-@media only screen and (min-width: 1080px) and (max-width: 1329px) {
+@media only screen and (min-width: 1260px) and (max-width: 1919px) {
   .wrap {
     .header {
       .menu-mobile,
@@ -798,25 +798,35 @@
     .slider {
       &__content {
         margin-top: -15%;
-        margin-left: -30.5%;
-        &__title {
-          font-size: 32px;
-        }
-        &__slogan {
-          font-size: 24px;
-        }
-        &__description {
-          display: block;
-          font-size: 12px;
-          margin-top: 0em;
-          margin-bottom: 1em;
-        }
+        margin-left: -26%;
 
-        .btn {
-          line-height: 20px;
-          width: 100px;
-          font-size: 10px;
-          height: 40px;
+      }
+    }
+    .main {
+      // z-index: 2;
+      margin-top: -0.5%;
+      margin-left: 0;
+      margin-right: 0;
+      .list-product {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 2.4em;
+  
+        .product {
+          width: 21%;
+          margin-left: 1em;
+          margin-right: 1em;
+          margin-bottom: 2em;
+          &:nth-child(4n) {
+            margin-right: 1em;
+          }
+  
+          &__title {
+            margin-left: 3em;
+          }
+          &__price {
+            margin-left: 3em;
+          }
         }
       }
     }
@@ -835,7 +845,6 @@
     }
 
     .slider {
-      // position: relative;
       &__content {
         margin-top: -10%;
         margin-left: -20%;

@@ -1,0 +1,52 @@
+$(document).ready(function(){
+  $(".slider-owl").owlCarousel();
+});
+$('.slider-owl').owlCarousel({
+  loop:true,
+  margin:0,
+  responsiveClass:true,
+  dots:false,
+  autoplay:true,
+  autoplayTimeout:3500,
+  autoplayHoverPause:true,
+  nav:false,
+  responsive:{
+      0:{
+          items:1,
+      },
+      600:{
+          items:1
+      },
+      1000:{
+          items:1
+        }
+  }
+})
+
+
+
+
+$(document).ready(function(){
+  $(".client-owl").owlCarousel();
+});
+$('.client-owl').owlCarousel({
+  loop:true,
+  margin:0,
+  responsiveClass:true,
+  dots:true,
+  autoplay:true,
+  autoplayTimeout:3500,
+  autoplayHoverPause:true,
+  nav:false,
+  responsive:{
+      0:{
+          items:1,
+      },
+      600:{
+          items:1
+      },
+      1000:{
+          items:1
+        }
+  }
+})

@@ -1,0 +1,125 @@
+/*=== HEADER ===*/
+.wrap {
+  width: 100%;
+  height: auto;
+  .header {
+    position: relative;
+    border: none;
+    margin: 0;
+    width: 100%;
+    z-index: 2;
+    background: @color-brg-header;
+    opacity: 0.8;
+    /*=== header layout ===*/
+    &__main {
+      .web-kit-flex();
+    }
+    /*=== Logo ===*/
+    &__logo {
+      padding: 21.5px 0;
+    }
+    .menu-mobile {
+      display: none;
+    }
+    .menu-times {
+      display: none;
+    }
+    /*=== Menu ===*/
+    &__menu ul {
+      margin-left: 3.4em;
+
+      li {
+        padding: 2.15em 1.5em 2.1em;
+        display: inline-block;
+        a {
+          .font_popins( 16px,400,28px,@color-while);
+          position: relative;
+          display: block;
+          margin-top: 0.25em;
+          text-align: center;
+          text-decoration: none;
+          &::before {
+            position: absolute;
+            content: " ";
+            left: 0;
+            bottom: -2px;
+            height: 3px;
+            width: 100%;
+            transform: scaleX(0);
+            transform-origin: right;
+            background-color: @color-while;
+            transition: transform 0.4s linear;
+            border-bottom: none;
+          }
+          &:hover:before {
+            outline: 1;
+            transform: scaleX(1);
+            transform-origin: left;
+          }
+        }
+      }
+    }
+
+    /*=== Cart, Search, User ===*/
+    &__links {
+      padding-top: 2.6em;
+      padding-bottom: 2em;
+      padding-right: 0;
+      .web-kit-flex();
+      justify-content: flex-end;
+      align-items: center;
+      a {
+        i {
+          color: @color-while;
+          margin-left: 1.55em;
+        }
+      }
+    }
+
+    &__links span {
+      margin-left: 1.7em;
+      color: @color-while;
+      font-weight: 400;
+    }
+  }
+}
+/*=== Slider ===*/
+.slider {
+  margin: 0;
+  padding: 0;
+  img {
+    margin-top: -100px;
+    z-index: 1;
+    max-width: 100%;
+    width: auto;
+  }
+  &__content {
+    position: absolute;
+    width: 33.25em;
+    left: 23.2em;
+    top: 19.2em;
+    z-index: 3;
+    &__title {
+      letter-spacing: -0.1px;
+      .font_popins_no_line-heigh(60px, 700, @color-while);
+    }
+    &__slogan {
+      margin-top: 0.45em;
+      margin-bottom: 0.69em;
+      display: block;
+      .font_popins_no_line-heigh(40px, 700, @color-while);
+    }
+    &__description {
+      margin-bottom: 4em;
+      margin-left: 0.2em;
+      .font_popins(14px, 400, 24px, @color-while);
+    }
+    &__btn {
+      margin-left: 0.2em;
+      &:hover,
+      &:visited {
+        color: @color-while;
+      }
+    }
+  }
+}
